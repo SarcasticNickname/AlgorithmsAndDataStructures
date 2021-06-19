@@ -1,4 +1,4 @@
-package cormen;
+package main;
 
 public class MainApp {
 	

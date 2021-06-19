@@ -1,4 +1,4 @@
-package cormen;
+package main;
 
 import java.util.Date;
 import java.util.Random;
@@ -26,13 +26,13 @@ public class TestSortingAlgorithm {
 			times[i] = time;
 		}
 		
-		double sum = 0;
+		long sum = 0;
 		for(int i = 0; i < times.length; i++) {
 			sum += times[i];
 		}
 		
-		System.out.println("Algorythms overall spedd sorting 200 arrays of 10000 elements: " + sum + "msc");
+		System.out.println("Overall time spent sorting 200 arrays(10000 elements each): " + sum + "msc");
 		double averageTime = sum/200.0;
-		System.out.println("Algorithms average speed sorting 1 array out of 200 arrays(10000 elems):" + averageTime + "msc");
+		System.out.println("Average time spent sorting 1 array out of 200 (10000 elems each):" + averageTime + "msc");
 	}
 }

@@ -1,4 +1,4 @@
-package cormen;
+package main;
 
 import java.util.Date;
 import java.util.Random;
@@ -13,6 +13,12 @@ public class TestSortingAlgorithm {
 		}
 		return num;
 	}
+	
+	private static void checkValidity(int [] sortedArr) {
+		for(int i = 0; i < sortedArr.length - 1; i++) {
+			assert(sortedArr[i] <= sortedArr[i+1]);
+		}
+	}
 
 
 	public static void test(Sort sort) {
@@ -24,6 +30,7 @@ public class TestSortingAlgorithm {
 			sort.sort(numbers);
 			time = (new Date()).getTime() - time;
 			times[i] = time;
+			checkValidity(numbers);
 		}
 		
 		long sum = 0;
