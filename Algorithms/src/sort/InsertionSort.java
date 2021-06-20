@@ -1,4 +1,4 @@
-package main;
+package sort;
 
 public class InsertionSort implements Sort {
 	public int [] sort(int[] numbers) {

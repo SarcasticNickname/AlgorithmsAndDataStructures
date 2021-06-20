@@ -1,4 +1,4 @@
-package main;
+package sort;
 
 public class BubbleSort implements Sort {
 

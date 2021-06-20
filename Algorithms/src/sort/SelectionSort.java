@@ -1,4 +1,4 @@
-package main;
+package sort;
 
 public class SelectionSort implements Sort {
 
