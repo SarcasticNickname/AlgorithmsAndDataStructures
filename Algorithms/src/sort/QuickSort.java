@@ -25,6 +25,9 @@ public class QuickSort implements Sort {
 	private void quickSort(int[] num, int start, int end) {
 		if(start >= end)
 			return;
+		//Next 2 lines implement randomized QuickSort.
+		//int rndIndx = start + (int)(Math.random()*(end - start + 1));
+		//swap(num,rndIndx,end);
 		int pIndx = partition(num, start,end);
 		quickSort(num, start, pIndx - 1);
 		quickSort(num, pIndx + 1, end);
