@@ -38,8 +38,8 @@ public class TestSortingAlgorithm {
 			sum += times[i];
 		}
 		
-		System.out.println("Overall time spent sorting 200 arrays(10000 elements each): " + sum/1000 + "seconds");
+		System.out.println("Overall time spent sorting 200 arrays(10000 elements each): " + sum + "ms");
 		double averageTime = sum/200.0;
-		System.out.println("Average time spent sorting 1 array out of 200 (10000 elems each):" + averageTime/1000 + "seconds");
+		System.out.println("Average time spent sorting 1 array out of 200 (10000 elems each):" + averageTime + "ms");
 	}
 }
